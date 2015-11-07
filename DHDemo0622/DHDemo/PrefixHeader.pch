@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  DHDemo
+//
+//  Created by 杜豪 on 15/3/17.
+//  Copyright (c) 2015年 杜豪. All rights reserved.
+//
+
+#ifndef DHDemo_PrefixHeader_pch
+#define DHDemo_PrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+
+#import "Header.h"
+#endif
+
+#endif

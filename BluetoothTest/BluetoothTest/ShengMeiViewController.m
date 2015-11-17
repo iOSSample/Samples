@@ -18,15 +18,16 @@
     CBCentralManager *_manager;
     CBPeripheral *_peripheral;
     CBCharacteristic *_writeCharacteristic;
+    
     NSString *_infoText;
+    
     BOOL blueState;
     
     NSMutableArray *writeCommandQueue;
+    
     NSInteger objectCommandState;
     NSInteger operationCommandState;
     id writtenData;
-
-    
 }
 - (IBAction)startBTAction:(id)sender;
 - (IBAction)stopBTAction:(id)sender;
@@ -103,8 +104,12 @@
     [self showMsg:@"读取数据个数"];
     [self writeDataToPeripheral:_peripheral data:nil objectCommand:AC_COMMAND OPCode:GET_COMMAND];
 // 0e 250163 00030000 00
-    
-    
+}
+
+- (IBAction)readDeviceStateAction:(id)sender {
+    [self showMsg:@"读取工作状态"];
+    [self writeDataToPeripheral:_peripheral data:nil objectCommand:MONITOR_COMMAND OPCode:GET_COMMAND];
+    //<0e260162 0803> &b
 }
 
 - (void)writeDataToPeripheral:(CBPeripheral *)peripheral data:(id)data objectCommand:(OBJECT_COMMAND_STATE)cmd OPCode:(OPERATION_COMMAND_STATE)opCode{
@@ -151,6 +156,7 @@
         NSData *valueData = [NSData dataWithBytes:value length:count];
         NSLog(@"---- ValueData:%@ ----",valueData);
         //<620b0000 00000000>   0X62 0X0B
+        
         [peripheral writeValue:valueData forCharacteristic:downCharacteristic type:CBCharacteristicWriteWithoutResponse];
         
     }
@@ -179,7 +185,7 @@
             }
             break;
         }
-    }
+    } 
     return downCharacteristic;
 }
 #pragma mark-
@@ -221,7 +227,7 @@
     //如果不能连接会调用 - (void)centralManager:(CBCentralManager *)central didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error
     // name  TH-2-046
     // identifier DB8A9315-D797-0E7D-85B9-B949EE6C8F9C
-
+//th 唯一标示
     if ([peripheral.name isEqualToString:@"TH-2-046"]) {
         
         NSLog(@"peripheral name %@ \\ rssi = %ld", peripheral.name, (long)[RSSI integerValue]);
@@ -268,6 +274,7 @@
     
     _peripheral.delegate = self;
     [self showMsg:@"开始搜索服务"];
+    //都是 FFB0
     //搜搜设备的服务
 //    [_peripheral discoverServices:@[[CBUUID UUIDWithString:kServiceUUID]]];
     [_peripheral discoverServices:nil];
@@ -367,6 +374,7 @@
         //发现服务
         [self showMsg:[NSString stringWithFormat:@"遍历服务 %@",service.UUID]];
         DHLog(@"发现服务 %@",service.UUID);
+        //写死 FFB2
         [peripheral discoverCharacteristics:nil forService:service];
         
         //下面是发现特定服务
@@ -417,11 +425,11 @@
                 //告知我们要监测这个服务特性的状态变化
                 [peripheral setNotifyValue:YES forCharacteristic:characteristic];
             }
-            if (characteristicUUID == SANMEDITECH_FACTORY_INFO_CHARACTER) {//FFB5
-                [self showMsg:@"FFB5 特征 readValueForCharacteristic"];
-
-                [peripheral readValueForCharacteristic:characteristic];
-            }
+            
+//            if (characteristicUUID == SANMEDITECH_FACTORY_INFO_CHARACTER) {//FFB5
+//                [self showMsg:@"FFB5 特征 readValueForCharacteristic"];
+//                [peripheral readValueForCharacteristic:characteristic];
+//            }
             /*
              <UUID = FFB1, properties = 0x18, value = (null), notifying = NO>
              <UUID = FFB2, properties = 0x14, value = (null), notifying = NO>
@@ -490,8 +498,6 @@
 
 
 /*!
- *  @method peripheral:didUpdateValueForCharacteristic:error:
- *
  *  @param peripheral		The peripheral providing this information.
  *  @param characteristic	A <code>CBCharacteristic</code> object.
  *	@param error			If an error occurred, the cause of the failure.
@@ -517,23 +523,15 @@
                 NSLog(@"未发现特征值.");
                 [self showMsg:@"未发现特征值."];
             }
-//            DHLog(@"开始授权");
-//            NSData *data = [OrderClass makeAutorOrder];
-//            [_peripheral writeValue:data
-//                  forCharacteristic:_writeCharacteristic
-//                               type:CBCharacteristicWriteWithoutResponse];
         }
-        
     }
 }
 
 /*!
- *  @method peripheral:didWriteValueForCharacteristic:error:
  *
  *  @param peripheral		The peripheral providing this information.
  *  @param characteristic	A <code>CBCharacteristic</code> object.
  *	@param error			If an error occurred, the cause of the failure.
- *
  *  @discussion				This method returns the result of a {@link writeValue:forCharacteristic:type:} call, when the <code>CBCharacteristicWriteWithResponse</code> type is used.
  */
 - (void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error{
@@ -596,11 +594,25 @@
     
 }
 - (void)showMsg:(NSString *)msg{
-    _infoText = [_infoText stringByAppendingString:msg];
-    _infoText = [_infoText stringByAppendingString:@"\n"];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        infoTextView.text = _infoText;
-    });
+    if ([msg isNonEmpty]) {
+        _infoText = [_infoText stringByAppendingString:msg];
+        _infoText = [_infoText stringByAppendingString:@"\n"];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            infoTextView.text = _infoText;
+        });
+    }else{
+        DHLog(@"显示空");
+    }
+   
 }
-
+- (void)makeData:(NSData *)data{
+    uint8_t *byte = (uint8_t*)[data bytes];
+    for (int i = 0; i < [data length]; i = i+2) {
+        uint16_t currentData = *(byte+1);
+        currentData = (currentData<<8)| *byte;
+//        CGFloat current = currentData;
+        NSLog(@"");
+        byte = byte+2;
+    }
+}
 @end

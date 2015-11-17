@@ -289,7 +289,7 @@ static NSMutableDictionary* urlSpecialChars = nil;
 
 + (NSData *)getDataWithString:(NSString *)string{
     NSData *tempData = [string dataUsingEncoding:NSASCIIStringEncoding];
-    int length = tempData.length;
+    long length = tempData.length;
     uint8_t value[length];
     memset(value, 0, length);
     uint8_t *bytes = (uint8_t*)[tempData bytes];

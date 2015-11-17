@@ -104,7 +104,10 @@ extern void BGC_Init();
 	K    		放大100倍的K值
  background	背景减差
  */
+//553*0.01
 extern int BGC_InputCurrent(unsigned int current, _sConvertResult_t *result);
+
+
 /*
  输入参比血糖值
  
@@ -121,6 +124,7 @@ extern int BGC_InputCurrent(unsigned int current, _sConvertResult_t *result);
 	如果返回值不为BGC_OK，应用程序需要提示，要求用户重新输入参比血糖或进行其它处理。
 	应用程序应保证输入的ref在规定有效范围内，如超出设定范围，计算得到的K值会有严重误差。
  */
+//3.9*10
 extern int BGC_InputReference(unsigned int ref, int type);
 
 /*
@@ -144,6 +148,7 @@ latestcurrent	最近的原始电流值，单位0.01nA
 说  明：
 	正常操作下，K值和背景减差是由算法利用电流值和参比计算得到。某些情况下，如应用重启，但希望继续正在进行中的监测，需要应用将之前的K值、背景减差和最近的电流值告之给算法，算法便可使用上述参数进行转换。
 */
+//
 extern void BGC_ContinueConverting(unsigned int K, unsigned int background, unsigned int latestcurrent);
 
 extern int BGC_Verion();

@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -268,7 +269,7 @@
                                     <constraint firstAttribute="width" constant="55" id="G9n-Zk-ZHI"/>
                                     <constraint firstAttribute="height" constant="30" id="LBZ-kC-yXS"/>
                                 </constraints>
-                                <state key="normal" title="状态"/>
+                                <state key="normal" title="全部"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="G9n-Zk-ZHI"/>
@@ -293,7 +294,7 @@
                                     <constraint firstAttribute="width" constant="53" id="GRP-eh-kUX"/>
                                     <constraint firstAttribute="height" constant="30" id="W0c-ka-V88"/>
                                 </constraints>
-                                <state key="normal" title="读取"/>
+                                <state key="normal" title="个数"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="GRP-eh-kUX"/>
@@ -310,6 +311,31 @@
                                     <action selector="readDataAction:" destination="uiJ-kr-LRq" eventType="touchUpInside" id="aJC-4g-9Xe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwk-zM-ywU">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OtZ-hZ-bNN"/>
+                                    <constraint firstAttribute="width" constant="48" id="r6Y-b8-ZiL"/>
+                                </constraints>
+                                <state key="normal" title="状态"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OtZ-hZ-bNN"/>
+                                        <exclude reference="r6Y-b8-ZiL"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="OtZ-hZ-bNN"/>
+                                        <include reference="r6Y-b8-ZiL"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="readDeviceStateAction:" destination="uiJ-kr-LRq" eventType="touchUpInside" id="xzB-IR-1Om"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -319,6 +345,7 @@
                             <constraint firstItem="QNi-5F-7An" firstAttribute="leading" secondItem="Wgj-Du-Ydg" secondAttribute="leadingMargin" constant="8" id="63a-GN-d0V">
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
+                            <constraint firstItem="Fwk-zM-ywU" firstAttribute="top" secondItem="yn0-VV-B5q" secondAttribute="bottom" constant="8" id="7SP-mK-r2A"/>
                             <constraint firstItem="Lhc-rO-UWQ" firstAttribute="leading" secondItem="Wgj-Du-Ydg" secondAttribute="leading" constant="20" id="DNh-cI-0NY"/>
                             <constraint firstItem="P6A-wu-CnR" firstAttribute="top" secondItem="Lhc-rO-UWQ" secondAttribute="bottom" constant="8" id="JDc-Wr-5r8">
                                 <variation key="heightClass=regular-widthClass=compact" constant="8"/>
@@ -335,6 +362,7 @@
                                 <variation key="heightClass=regular-widthClass=compact" constant="8"/>
                             </constraint>
                             <constraint firstItem="Iso-1c-VXa" firstAttribute="top" secondItem="P6A-wu-CnR" secondAttribute="bottom" constant="8" id="bLR-jd-DjF"/>
+                            <constraint firstItem="Fwk-zM-ywU" firstAttribute="leading" secondItem="Iso-1c-VXa" secondAttribute="trailing" constant="8" id="r8d-tm-ULq"/>
                             <constraint firstItem="wW5-Qk-68o" firstAttribute="leading" secondItem="Wgj-Du-Ydg" secondAttribute="leadingMargin" id="uCp-pQ-Swz"/>
                             <constraint firstItem="sXm-OV-6pK" firstAttribute="top" secondItem="Lhc-rO-UWQ" secondAttribute="bottom" constant="8" id="xs1-ga-rC5">
                                 <variation key="heightClass=regular-widthClass=compact" constant="8"/>
@@ -349,6 +377,7 @@
                                 <exclude reference="sXm-OV-6pK"/>
                                 <exclude reference="wW5-Qk-68o"/>
                                 <exclude reference="Iso-1c-VXa"/>
+                                <exclude reference="Fwk-zM-ywU"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="52v-ND-vSk"/>
@@ -364,6 +393,8 @@
                                 <exclude reference="bLR-jd-DjF"/>
                                 <exclude reference="OIn-Eu-cfj"/>
                                 <exclude reference="ZqX-g1-Ej3"/>
+                                <exclude reference="7SP-mK-r2A"/>
+                                <exclude reference="r8d-tm-ULq"/>
                                 <exclude reference="X4o-eh-f6X"/>
                                 <exclude reference="xs1-ga-rC5"/>
                             </mask>
@@ -377,6 +408,7 @@
                                 <include reference="sXm-OV-6pK"/>
                                 <include reference="wW5-Qk-68o"/>
                                 <include reference="Iso-1c-VXa"/>
+                                <include reference="Fwk-zM-ywU"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="52v-ND-vSk"/>
@@ -392,6 +424,8 @@
                                 <include reference="bLR-jd-DjF"/>
                                 <include reference="OIn-Eu-cfj"/>
                                 <include reference="ZqX-g1-Ej3"/>
+                                <include reference="7SP-mK-r2A"/>
+                                <include reference="r8d-tm-ULq"/>
                                 <include reference="X4o-eh-f6X"/>
                                 <include reference="xs1-ga-rC5"/>
                             </mask>

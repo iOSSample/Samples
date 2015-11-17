@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DC0040F1B608CEA0080FEF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC0040E1B608CEA0080FEF6 /* main.m */; };
+		7DC004121B608CEA0080FEF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC004111B608CEA0080FEF6 /* AppDelegate.m */; };
+		7DC004151B608CEA0080FEF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC004141B608CEA0080FEF6 /* ViewController.m */; };
+		7DC004181B608CEA0080FEF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC004161B608CEA0080FEF6 /* Main.storyboard */; };
+		7DC0041A1B608CEA0080FEF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC004191B608CEA0080FEF6 /* Images.xcassets */; };
+		7DC0041D1B608CEA0080FEF6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DC0041B1B608CEA0080FEF6 /* LaunchScreen.xib */; };
+		7DC004291B608CEA0080FEF6 /* MyTTTAttributedLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC004281B608CEA0080FEF6 /* MyTTTAttributedLabelTests.m */; };
+		F5F24B71C1D494AE40799804 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F63597FB632DC6C2A99F31 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DC004231B608CEA0080FEF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DC004011B608CEA0080FEF6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DC004081B608CEA0080FEF6;
+			remoteInfo = MyTTTAttributedLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08F63597FB632DC6C2A99F31 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		62AA86634B0C404DB04F1665 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		7DC004091B608CEA0080FEF6 /* MyTTTAttributedLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTTTAttributedLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DC0040D1B608CEA0080FEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DC0040E1B608CEA0080FEF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7DC004101B608CEA0080FEF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7DC004111B608CEA0080FEF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7DC004131B608CEA0080FEF6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7DC004141B608CEA0080FEF6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7DC004171B608CEA0080FEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7DC004191B608CEA0080FEF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7DC0041C1B608CEA0080FEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7DC004221B608CEA0080FEF6 /* MyTTTAttributedLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTTTAttributedLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DC004271B608CEA0080FEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DC004281B608CEA0080FEF6 /* MyTTTAttributedLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyTTTAttributedLabelTests.m; sourceTree = "<group>"; };
+		9447AFCEA97604C4C5B60732 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DC004061B608CEA0080FEF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5F24B71C1D494AE40799804 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DC0041F1B608CEA0080FEF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0780C3E2AA811C288886C3E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08F63597FB632DC6C2A99F31 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DC004001B608CEA0080FEF6 = {
+			isa = PBXGroup;
+			children = (
+				7DC0040B1B608CEA0080FEF6 /* MyTTTAttributedLabel */,
+				7DC004251B608CEA0080FEF6 /* MyTTTAttributedLabelTests */,
+				7DC0040A1B608CEA0080FEF6 /* Products */,
+				BE91774EAE2FADCEAC40B013 /* Pods */,
+				0780C3E2AA811C288886C3E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7DC0040A1B608CEA0080FEF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DC004091B608CEA0080FEF6 /* MyTTTAttributedLabel.app */,
+				7DC004221B608CEA0080FEF6 /* MyTTTAttributedLabelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DC0040B1B608CEA0080FEF6 /* MyTTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				7DC004101B608CEA0080FEF6 /* AppDelegate.h */,
+				7DC004111B608CEA0080FEF6 /* AppDelegate.m */,
+				7DC004131B608CEA0080FEF6 /* ViewController.h */,
+				7DC004141B608CEA0080FEF6 /* ViewController.m */,
+				7DC004161B608CEA0080FEF6 /* Main.storyboard */,
+				7DC004191B608CEA0080FEF6 /* Images.xcassets */,
+				7DC0041B1B608CEA0080FEF6 /* LaunchScreen.xib */,
+				7DC0040C1B608CEA0080FEF6 /* Supporting Files */,
+			);
+			path = MyTTTAttributedLabel;
+			sourceTree = "<group>";
+		};
+		7DC0040C1B608CEA0080FEF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DC0040D1B608CEA0080FEF6 /* Info.plist */,
+				7DC0040E1B608CEA0080FEF6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7DC004251B608CEA0080FEF6 /* MyTTTAttributedLabelTests */ = {
+			isa = PBXGroup;
+			children = (
+				7DC004281B608CEA0080FEF6 /* MyTTTAttributedLabelTests.m */,
+				7DC004261B608CEA0080FEF6 /* Supporting Files */,
+			);
+			path = MyTTTAttributedLabelTests;
+			sourceTree = "<group>";
+		};
+		7DC004261B608CEA0080FEF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DC004271B608CEA0080FEF6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE91774EAE2FADCEAC40B013 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62AA86634B0C404DB04F1665 /* Pods.debug.xcconfig */,
+				9447AFCEA97604C4C5B60732 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DC004081B608CEA0080FEF6 /* MyTTTAttributedLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DC0042C1B608CEA0080FEF6 /* Build configuration list for PBXNativeTarget "MyTTTAttributedLabel" */;
+			buildPhases = (
+				6128C033AD664D5486A379BF /* Check Pods Manifest.lock */,
+				7DC004051B608CEA0080FEF6 /* Sources */,
+				7DC004061B608CEA0080FEF6 /* Frameworks */,
+				7DC004071B608CEA0080FEF6 /* Resources */,
+				B2587F976672463AD96691CA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTTTAttributedLabel;
+			productName = MyTTTAttributedLabel;
+			productReference = 7DC004091B608CEA0080FEF6 /* MyTTTAttributedLabel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7DC004211B608CEA0080FEF6 /* MyTTTAttributedLabelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DC0042F1B608CEA0080FEF6 /* Build configuration list for PBXNativeTarget "MyTTTAttributedLabelTests" */;
+			buildPhases = (
+				7DC0041E1B608CEA0080FEF6 /* Sources */,
+				7DC0041F1B608CEA0080FEF6 /* Frameworks */,
+				7DC004201B608CEA0080FEF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DC004241B608CEA0080FEF6 /* PBXTargetDependency */,
+			);
+			name = MyTTTAttributedLabelTests;
+			productName = MyTTTAttributedLabelTests;
+			productReference = 7DC004221B608CEA0080FEF6 /* MyTTTAttributedLabelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DC004011B608CEA0080FEF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "杜豪";
+				TargetAttributes = {
+					7DC004081B608CEA0080FEF6 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					7DC004211B608CEA0080FEF6 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 7DC004081B608CEA0080FEF6;
+					};
+				};
+			};
+			buildConfigurationList = 7DC004041B608CEA0080FEF6 /* Build configuration list for PBXProject "MyTTTAttributedLabel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DC004001B608CEA0080FEF6;
+			productRefGroup = 7DC0040A1B608CEA0080FEF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DC004081B608CEA0080FEF6 /* MyTTTAttributedLabel */,
+				7DC004211B608CEA0080FEF6 /* MyTTTAttributedLabelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DC004071B608CEA0080FEF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DC004181B608CEA0080FEF6 /* Main.storyboard in Resources */,
+				7DC0041D1B608CEA0080FEF6 /* LaunchScreen.xib in Resources */,
+				7DC0041A1B608CEA0080FEF6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DC004201B608CEA0080FEF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6128C033AD664D5486A379BF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B2587F976672463AD96691CA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DC004051B608CEA0080FEF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DC004151B608CEA0080FEF6 /* ViewController.m in Sources */,
+				7DC004121B608CEA0080FEF6 /* AppDelegate.m in Sources */,
+				7DC0040F1B608CEA0080FEF6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DC0041E1B608CEA0080FEF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DC004291B608CEA0080FEF6 /* MyTTTAttributedLabelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DC004241B608CEA0080FEF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DC004081B608CEA0080FEF6 /* MyTTTAttributedLabel */;
+			targetProxy = 7DC004231B608CEA0080FEF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7DC004161B608CEA0080FEF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DC004171B608CEA0080FEF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7DC0041B1B608CEA0080FEF6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DC0041C1B608CEA0080FEF6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DC0042A1B608CEA0080FEF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7DC0042B1B608CEA0080FEF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DC0042D1B608CEA0080FEF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62AA86634B0C404DB04F1665 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyTTTAttributedLabel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7DC0042E1B608CEA0080FEF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9447AFCEA97604C4C5B60732 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyTTTAttributedLabel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7DC004301B608CEA0080FEF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyTTTAttributedLabelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTTTAttributedLabel.app/MyTTTAttributedLabel";
+			};
+			name = Debug;
+		};
+		7DC004311B608CEA0080FEF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyTTTAttributedLabelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTTTAttributedLabel.app/MyTTTAttributedLabel";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DC004041B608CEA0080FEF6 /* Build configuration list for PBXProject "MyTTTAttributedLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DC0042A1B608CEA0080FEF6 /* Debug */,
+				7DC0042B1B608CEA0080FEF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DC0042C1B608CEA0080FEF6 /* Build configuration list for PBXNativeTarget "MyTTTAttributedLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DC0042D1B608CEA0080FEF6 /* Debug */,
+				7DC0042E1B608CEA0080FEF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DC0042F1B608CEA0080FEF6 /* Build configuration list for PBXNativeTarget "MyTTTAttributedLabelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DC004301B608CEA0080FEF6 /* Debug */,
+				7DC004311B608CEA0080FEF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DC004011B608CEA0080FEF6 /* Project object */;
+}

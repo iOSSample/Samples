@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--One-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="One" spacing="0.0" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AppleWatchDemo_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Your guess is: 3" id="NEl-fV-Uwh"/>
+                        <button width="1" alignment="left" verticalAlignment="center" title="开始" id="91q-qo-tky">
+                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                            <connections>
+                                <action selector="startGuess" destination="AgC-eL-Hgc" id="xtb-1b-Tur"/>
+                            </connections>
+                        </button>
+                        <label width="129" alignment="left" verticalAlignment="bottom" text="Press Guess to play" minimumScaleFactor="0.5" id="iq0-W0-zp2"/>
+                        <slider width="1" alignment="left" value="0.59999999999999998" steps="5" id="Zjp-Fw-Cnt">
+                            <connections>
+                                <action selector="updateGuess:" destination="AgC-eL-Hgc" id="6lb-mh-gbj"/>
+                            </connections>
+                        </slider>
+                    </items>
+                    <edgeInsets key="margins" left="10" right="10" top="1" bottom="12"/>
+                    <connections>
+                        <outlet property="guessLabel" destination="NEl-fV-Uwh" id="fjb-6S-eAV"/>
+                        <outlet property="guessSlider" destination="Zjp-Fw-Cnt" id="GBM-YM-H9F"/>
+                        <outlet property="resultLabel" destination="iq0-W0-zp2" id="fTY-Yz-GBX"/>
+                        <segue destination="1kQ-sH-IUB" kind="relationship" relationship="nextPage" id="a6W-zA-s1a"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Two-->
+        <scene sceneID="qco-J3-rsx">
+            <objects>
+                <controller title="Two" id="1kQ-sH-IUB" customClass="TwoInterfaceController" customModule="AppleWatchDemo_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="哈哈" id="uBP-Ii-Hsx">
+                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" pointSize="18"/>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="429" y="347"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="lgH-WK-CiS">
+            <objects>
+                <controller id="dnc-CU-TL8"/>
+            </objects>
+            <point key="canvasLocation" x="594" y="347"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" topTemplateType="groupBody1" id="0uZ-2p-rRc" customClass="GlanceController" customModule="AppleWatchDemo_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y">
+                            <items>
+                                <dateLabel alignment="left" id="aNk-HP-nGX">
+                                    <dateFormatterStyle key="dateStyle" none="YES" short="YES"/>
+                                    <dateFormatterStyle key="timeStyle" none="YES" short="YES"/>
+                                    <variation key="device=watch38mm" minimumScaleFactor="0.5"/>
+                                </dateLabel>
+                            </items>
+                        </group>
+                        <label alignment="left" text="Label" id="Mbg-YM-Lop">
+                            <variation key="device=watch38mm" minimumScaleFactor="0.5"/>
+                        </label>
+                        <group alignment="left" id="uCw-4Q-Ouw">
+                            <items>
+                                <map alignment="left" id="rTO-AQ-ElC"/>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="map" destination="rTO-AQ-ElC" id="yg9-OQ-nXZ"/>
+                        <outlet property="txtDate" destination="aNk-HP-nGX" id="Lqc-JR-aBr"/>
+                        <outlet property="txtLocation" destination="Mbg-YM-Lop" id="wti-gF-LIC"/>
+                    </connections>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+        <!--watchbacktwo-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController backgroundImage="watchbacktwo" id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--watchback-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller backgroundImage="watchback" id="gdX-wl-uQE" customClass="NotificationController" customModule="AppleWatchDemo_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="124" alignment="left" text="Label" numberOfLines="3" id="gOR-ZP-k7H"/>
+                    </items>
+                    <connections>
+                        <outlet property="dynamicLabel" destination="gOR-ZP-k7H" id="9NB-sW-gkb"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+    </scenes>
+</document>

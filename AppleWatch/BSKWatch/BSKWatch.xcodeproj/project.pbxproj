@@ -1,0 +1,851 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		183AB6191B0B927F002BC615 /* DayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183AB6181B0B927F002BC615 /* DayCell.m */; };
+		7D0867F31B033BB7007BF418 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0867F21B033BB7007BF418 /* TabBarViewController.m */; };
+		7D0867F61B033D9F007BF418 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0867F51B033D9F007BF418 /* TwoViewController.m */; };
+		7D0867F91B033FE8007BF418 /* MyTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0867F81B033FE8007BF418 /* MyTabBarItem.m */; };
+		7D0867FC1B034B63007BF418 /* ImageFromView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0867FB1B034B63007BF418 /* ImageFromView.m */; };
+		7D1E90511B09E1D800546AEB /* MonthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E90501B09E1D800546AEB /* MonthCell.m */; };
+		7D1E90541B09E41A00546AEB /* ChangeDayInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E90531B09E41A00546AEB /* ChangeDayInterfaceController.m */; };
+		7D6FB0DE1B049B0C0040A1AF /* NSDate+DH.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6FB0DD1B049B0C0040A1AF /* NSDate+DH.m */; };
+		7D6FB0E11B049BFB0040A1AF /* RecordMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6FB0E01B049BFB0040A1AF /* RecordMode.m */; };
+		7D772E041B00A224003C15CD /* BSKTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D772E031B00A224003C15CD /* BSKTool.m */; };
+		7D8535EE1B097F58004AECB8 /* ChangeYearInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8535ED1B097F58004AECB8 /* ChangeYearInterfaceController.m */; };
+		7D8535F11B097FC5004AECB8 /* TestDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8535F01B097FC5004AECB8 /* TestDateCell.m */; };
+		7D8535F41B09DB5B004AECB8 /* ChangeMonthInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8535F31B09DB5B004AECB8 /* ChangeMonthInterfaceController.m */; };
+		7D9216F61AF9E27700A5A3A5 /* CustomNotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9216F51AF9E27700A5A3A5 /* CustomNotificationController.m */; };
+		7D9E59B01B05A51800FFE650 /* json.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D9E59AF1B05A51800FFE650 /* json.txt */; };
+		7D9E59B21B05A6C700FFE650 /* ttt.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7D9E59B11B05A6C700FFE650 /* ttt.txt */; };
+		7DA24DA61B05CDD700BA093D /* YearCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA24DA51B05CDD700BA093D /* YearCell.m */; };
+		7DAB66301B04439500BA2761 /* recordTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB662F1B04439500BA2761 /* recordTimeCell.m */; };
+		7DAB66371B0444B400BA2761 /* ChoiceTimeSlotVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB66361B0444B400BA2761 /* ChoiceTimeSlotVC.m */; };
+		7DAB663C1B0444DA00BA2761 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB66391B0444DA00BA2761 /* InterfaceController.m */; };
+		7DAB663D1B0444DA00BA2761 /* RecordInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB663B1B0444DA00BA2761 /* RecordInterfaceController.m */; };
+		7DAB66401B04902700BA2761 /* TestTimeSlotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DAB663F1B04902700BA2761 /* TestTimeSlotCell.m */; };
+		7DEA6E9F1AEF8390001BBD4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA6E9E1AEF8390001BBD4B /* main.m */; };
+		7DEA6EA21AEF8390001BBD4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA6EA11AEF8390001BBD4B /* AppDelegate.m */; };
+		7DEA6EA51AEF8390001BBD4B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA6EA41AEF8390001BBD4B /* ViewController.m */; };
+		7DEA6EA81AEF8390001BBD4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DEA6EA61AEF8390001BBD4B /* Main.storyboard */; };
+		7DEA6EAA1AEF8390001BBD4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DEA6EA91AEF8390001BBD4B /* Images.xcassets */; };
+		7DEA6EAD1AEF8390001BBD4B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DEA6EAB1AEF8390001BBD4B /* LaunchScreen.xib */; };
+		7DEA6EB91AEF8390001BBD4B /* BSKWatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA6EB81AEF8390001BBD4B /* BSKWatchTests.m */; };
+		7DEA6ED01AEF83A8001BBD4B /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA6ECF1AEF83A8001BBD4B /* NotificationController.m */; };
+		7DEA6ED31AEF83A8001BBD4B /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEA6ED21AEF83A8001BBD4B /* GlanceController.m */; };
+		7DEA6ED51AEF83A8001BBD4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DEA6ED41AEF83A8001BBD4B /* Images.xcassets */; };
+		7DEA6ED91AEF83A8001BBD4B /* BSKWatch WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 7DEA6ED81AEF83A8001BBD4B /* BSKWatch WatchKit App.app */; };
+		7DEA6EE11AEF83A8001BBD4B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DEA6EDF1AEF83A8001BBD4B /* Interface.storyboard */; };
+		7DEA6EE31AEF83A8001BBD4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DEA6EE21AEF83A8001BBD4B /* Images.xcassets */; };
+		7DEA6EE61AEF83A8001BBD4B /* BSKWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7DEA6EC61AEF83A8001BBD4B /* BSKWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7DFB45F41B15653900A5645B /* DayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFB45F31B15653900A5645B /* DayCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DEA6EB31AEF8390001BBD4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DEA6E911AEF8390001BBD4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DEA6E981AEF8390001BBD4B;
+			remoteInfo = BSKWatch;
+		};
+		7DEA6EDA1AEF83A8001BBD4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DEA6E911AEF8390001BBD4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DEA6ED71AEF83A8001BBD4B;
+			remoteInfo = "BSKWatch WatchKit App";
+		};
+		7DEA6EE41AEF83A8001BBD4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DEA6E911AEF8390001BBD4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DEA6EC51AEF83A8001BBD4B;
+			remoteInfo = "BSKWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7DEA6EED1AEF83A8001BBD4B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7DEA6EE61AEF83A8001BBD4B /* BSKWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		183AB6171B0B927F002BC615 /* DayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayCell.h; sourceTree = "<group>"; };
+		183AB6181B0B927F002BC615 /* DayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayCell.m; sourceTree = "<group>"; };
+		7D0867F11B033BB7007BF418 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		7D0867F21B033BB7007BF418 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		7D0867F41B033D9F007BF418 /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		7D0867F51B033D9F007BF418 /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		7D0867F71B033FE8007BF418 /* MyTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarItem.h; sourceTree = "<group>"; };
+		7D0867F81B033FE8007BF418 /* MyTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarItem.m; sourceTree = "<group>"; };
+		7D0867FA1B034B63007BF418 /* ImageFromView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFromView.h; sourceTree = "<group>"; };
+		7D0867FB1B034B63007BF418 /* ImageFromView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFromView.m; sourceTree = "<group>"; };
+		7D1E904F1B09E1D800546AEB /* MonthCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthCell.h; sourceTree = "<group>"; };
+		7D1E90501B09E1D800546AEB /* MonthCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthCell.m; sourceTree = "<group>"; };
+		7D1E90521B09E41A00546AEB /* ChangeDayInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeDayInterfaceController.h; sourceTree = "<group>"; };
+		7D1E90531B09E41A00546AEB /* ChangeDayInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeDayInterfaceController.m; sourceTree = "<group>"; };
+		7D6FB0DC1B049B0C0040A1AF /* NSDate+DH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DH.h"; sourceTree = "<group>"; };
+		7D6FB0DD1B049B0C0040A1AF /* NSDate+DH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DH.m"; sourceTree = "<group>"; };
+		7D6FB0DF1B049BFB0040A1AF /* RecordMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordMode.h; sourceTree = "<group>"; };
+		7D6FB0E01B049BFB0040A1AF /* RecordMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordMode.m; sourceTree = "<group>"; };
+		7D772E021B00A224003C15CD /* BSKTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSKTool.h; sourceTree = "<group>"; };
+		7D772E031B00A224003C15CD /* BSKTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSKTool.m; sourceTree = "<group>"; };
+		7D8535EC1B097F58004AECB8 /* ChangeYearInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeYearInterfaceController.h; sourceTree = "<group>"; };
+		7D8535ED1B097F58004AECB8 /* ChangeYearInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeYearInterfaceController.m; sourceTree = "<group>"; };
+		7D8535EF1B097FC5004AECB8 /* TestDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDateCell.h; sourceTree = "<group>"; };
+		7D8535F01B097FC5004AECB8 /* TestDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDateCell.m; sourceTree = "<group>"; };
+		7D8535F21B09DB5B004AECB8 /* ChangeMonthInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeMonthInterfaceController.h; sourceTree = "<group>"; };
+		7D8535F31B09DB5B004AECB8 /* ChangeMonthInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeMonthInterfaceController.m; sourceTree = "<group>"; };
+		7D9216F31AF9E20200A5A3A5 /* CustomNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = CustomNotificationPayload.apns; sourceTree = "<group>"; };
+		7D9216F41AF9E27700A5A3A5 /* CustomNotificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNotificationController.h; sourceTree = "<group>"; };
+		7D9216F51AF9E27700A5A3A5 /* CustomNotificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNotificationController.m; sourceTree = "<group>"; };
+		7D9E59AF1B05A51800FFE650 /* json.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json.txt; sourceTree = "<group>"; };
+		7D9E59B11B05A6C700FFE650 /* ttt.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ttt.txt; sourceTree = "<group>"; };
+		7DA24DA41B05CDD700BA093D /* YearCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YearCell.h; sourceTree = "<group>"; };
+		7DA24DA51B05CDD700BA093D /* YearCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YearCell.m; sourceTree = "<group>"; };
+		7DAB662E1B04439500BA2761 /* recordTimeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = recordTimeCell.h; sourceTree = "<group>"; };
+		7DAB662F1B04439500BA2761 /* recordTimeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = recordTimeCell.m; sourceTree = "<group>"; };
+		7DAB66351B0444B400BA2761 /* ChoiceTimeSlotVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceTimeSlotVC.h; sourceTree = "<group>"; };
+		7DAB66361B0444B400BA2761 /* ChoiceTimeSlotVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoiceTimeSlotVC.m; sourceTree = "<group>"; };
+		7DAB66381B0444DA00BA2761 /* InterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		7DAB66391B0444DA00BA2761 /* InterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		7DAB663A1B0444DA00BA2761 /* RecordInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordInterfaceController.h; sourceTree = "<group>"; };
+		7DAB663B1B0444DA00BA2761 /* RecordInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordInterfaceController.m; sourceTree = "<group>"; };
+		7DAB663E1B04902700BA2761 /* TestTimeSlotCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTimeSlotCell.h; sourceTree = "<group>"; };
+		7DAB663F1B04902700BA2761 /* TestTimeSlotCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTimeSlotCell.m; sourceTree = "<group>"; };
+		7DEA6E991AEF8390001BBD4B /* BSKWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BSKWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DEA6E9D1AEF8390001BBD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DEA6E9E1AEF8390001BBD4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7DEA6EA01AEF8390001BBD4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7DEA6EA11AEF8390001BBD4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7DEA6EA31AEF8390001BBD4B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7DEA6EA41AEF8390001BBD4B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7DEA6EA71AEF8390001BBD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7DEA6EA91AEF8390001BBD4B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7DEA6EAC1AEF8390001BBD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7DEA6EB21AEF8390001BBD4B /* BSKWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BSKWatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DEA6EB71AEF8390001BBD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DEA6EB81AEF8390001BBD4B /* BSKWatchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSKWatchTests.m; sourceTree = "<group>"; };
+		7DEA6EC61AEF83A8001BBD4B /* BSKWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BSKWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DEA6EC91AEF83A8001BBD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DEA6ECA1AEF83A8001BBD4B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		7DEA6ECE1AEF83A8001BBD4B /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		7DEA6ECF1AEF83A8001BBD4B /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		7DEA6ED11AEF83A8001BBD4B /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		7DEA6ED21AEF83A8001BBD4B /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		7DEA6ED41AEF83A8001BBD4B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7DEA6ED81AEF83A8001BBD4B /* BSKWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BSKWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DEA6EDE1AEF83A8001BBD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DEA6EE01AEF83A8001BBD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7DEA6EE21AEF83A8001BBD4B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7DFB45F21B15653900A5645B /* DayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayCell.h; sourceTree = "<group>"; };
+		7DFB45F31B15653900A5645B /* DayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DEA6E961AEF8390001BBD4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEA6EAF1AEF8390001BBD4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEA6EC31AEF83A8001BBD4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DAB662D1B043F0500BA2761 /* mode */ = {
+			isa = PBXGroup;
+			children = (
+				7DAB662E1B04439500BA2761 /* recordTimeCell.h */,
+				7DAB662F1B04439500BA2761 /* recordTimeCell.m */,
+				7DAB663E1B04902700BA2761 /* TestTimeSlotCell.h */,
+				7DAB663F1B04902700BA2761 /* TestTimeSlotCell.m */,
+				7D6FB0DF1B049BFB0040A1AF /* RecordMode.h */,
+				7D6FB0E01B049BFB0040A1AF /* RecordMode.m */,
+				7DA24DA41B05CDD700BA093D /* YearCell.h */,
+				7DA24DA51B05CDD700BA093D /* YearCell.m */,
+				7D8535EF1B097FC5004AECB8 /* TestDateCell.h */,
+				7D8535F01B097FC5004AECB8 /* TestDateCell.m */,
+				7D1E904F1B09E1D800546AEB /* MonthCell.h */,
+				7D1E90501B09E1D800546AEB /* MonthCell.m */,
+<<<<<<< HEAD
+				7DFB45F21B15653900A5645B /* DayCell.h */,
+				7DFB45F31B15653900A5645B /* DayCell.m */,
+=======
+				183AB6171B0B927F002BC615 /* DayCell.h */,
+				183AB6181B0B927F002BC615 /* DayCell.m */,
+>>>>>>> origin/master
+			);
+			path = mode;
+			sourceTree = "<group>";
+		};
+		7DAB66341B04448000BA2761 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				7DAB66381B0444DA00BA2761 /* InterfaceController.h */,
+				7DAB66391B0444DA00BA2761 /* InterfaceController.m */,
+				7DAB663A1B0444DA00BA2761 /* RecordInterfaceController.h */,
+				7DAB663B1B0444DA00BA2761 /* RecordInterfaceController.m */,
+				7DAB66351B0444B400BA2761 /* ChoiceTimeSlotVC.h */,
+				7DAB66361B0444B400BA2761 /* ChoiceTimeSlotVC.m */,
+				7D8535EC1B097F58004AECB8 /* ChangeYearInterfaceController.h */,
+				7D8535ED1B097F58004AECB8 /* ChangeYearInterfaceController.m */,
+				7D8535F21B09DB5B004AECB8 /* ChangeMonthInterfaceController.h */,
+				7D8535F31B09DB5B004AECB8 /* ChangeMonthInterfaceController.m */,
+				7D1E90521B09E41A00546AEB /* ChangeDayInterfaceController.h */,
+				7D1E90531B09E41A00546AEB /* ChangeDayInterfaceController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		7DEA6E901AEF8390001BBD4B = {
+			isa = PBXGroup;
+			children = (
+				7DEA6E9B1AEF8390001BBD4B /* BSKWatch */,
+				7DEA6EB51AEF8390001BBD4B /* BSKWatchTests */,
+				7DEA6EC71AEF83A8001BBD4B /* BSKWatch WatchKit Extension */,
+				7DEA6EDC1AEF83A8001BBD4B /* BSKWatch WatchKit App */,
+				7DEA6E9A1AEF8390001BBD4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DEA6E9A1AEF8390001BBD4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DEA6E991AEF8390001BBD4B /* BSKWatch.app */,
+				7DEA6EB21AEF8390001BBD4B /* BSKWatchTests.xctest */,
+				7DEA6EC61AEF83A8001BBD4B /* BSKWatch WatchKit Extension.appex */,
+				7DEA6ED81AEF83A8001BBD4B /* BSKWatch WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DEA6E9B1AEF8390001BBD4B /* BSKWatch */ = {
+			isa = PBXGroup;
+			children = (
+				7DEA6EA01AEF8390001BBD4B /* AppDelegate.h */,
+				7DEA6EA11AEF8390001BBD4B /* AppDelegate.m */,
+				7D0867F11B033BB7007BF418 /* TabBarViewController.h */,
+				7D0867F21B033BB7007BF418 /* TabBarViewController.m */,
+				7D0867F41B033D9F007BF418 /* TwoViewController.h */,
+				7D0867F51B033D9F007BF418 /* TwoViewController.m */,
+				7D0867F71B033FE8007BF418 /* MyTabBarItem.h */,
+				7D0867F81B033FE8007BF418 /* MyTabBarItem.m */,
+				7DEA6EA31AEF8390001BBD4B /* ViewController.h */,
+				7DEA6EA41AEF8390001BBD4B /* ViewController.m */,
+				7D0867FA1B034B63007BF418 /* ImageFromView.h */,
+				7D0867FB1B034B63007BF418 /* ImageFromView.m */,
+				7DEA6EA61AEF8390001BBD4B /* Main.storyboard */,
+				7DEA6EA91AEF8390001BBD4B /* Images.xcassets */,
+				7DEA6EAB1AEF8390001BBD4B /* LaunchScreen.xib */,
+				7D9E59AF1B05A51800FFE650 /* json.txt */,
+				7D9E59B11B05A6C700FFE650 /* ttt.txt */,
+				7DEA6E9C1AEF8390001BBD4B /* Supporting Files */,
+			);
+			path = BSKWatch;
+			sourceTree = "<group>";
+		};
+		7DEA6E9C1AEF8390001BBD4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DEA6E9D1AEF8390001BBD4B /* Info.plist */,
+				7DEA6E9E1AEF8390001BBD4B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7DEA6EB51AEF8390001BBD4B /* BSKWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				7DEA6EB81AEF8390001BBD4B /* BSKWatchTests.m */,
+				7DEA6EB61AEF8390001BBD4B /* Supporting Files */,
+			);
+			path = BSKWatchTests;
+			sourceTree = "<group>";
+		};
+		7DEA6EB61AEF8390001BBD4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DEA6EB71AEF8390001BBD4B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7DEA6EC71AEF83A8001BBD4B /* BSKWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7DAB66341B04448000BA2761 /* VC */,
+				7DAB662D1B043F0500BA2761 /* mode */,
+				7DEA6ECE1AEF83A8001BBD4B /* NotificationController.h */,
+				7DEA6ECF1AEF83A8001BBD4B /* NotificationController.m */,
+				7D9216F41AF9E27700A5A3A5 /* CustomNotificationController.h */,
+				7D9216F51AF9E27700A5A3A5 /* CustomNotificationController.m */,
+				7DEA6ED11AEF83A8001BBD4B /* GlanceController.h */,
+				7DEA6ED21AEF83A8001BBD4B /* GlanceController.m */,
+				7DEA6ED41AEF83A8001BBD4B /* Images.xcassets */,
+				7DEA6EC81AEF83A8001BBD4B /* Supporting Files */,
+				7D772E021B00A224003C15CD /* BSKTool.h */,
+				7D772E031B00A224003C15CD /* BSKTool.m */,
+				7D6FB0DC1B049B0C0040A1AF /* NSDate+DH.h */,
+				7D6FB0DD1B049B0C0040A1AF /* NSDate+DH.m */,
+			);
+			path = "BSKWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		7DEA6EC81AEF83A8001BBD4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DEA6EC91AEF83A8001BBD4B /* Info.plist */,
+				7DEA6ECA1AEF83A8001BBD4B /* PushNotificationPayload.apns */,
+				7D9216F31AF9E20200A5A3A5 /* CustomNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7DEA6EDC1AEF83A8001BBD4B /* BSKWatch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				7DEA6EDF1AEF83A8001BBD4B /* Interface.storyboard */,
+				7DEA6EE21AEF83A8001BBD4B /* Images.xcassets */,
+				7DEA6EDD1AEF83A8001BBD4B /* Supporting Files */,
+			);
+			path = "BSKWatch WatchKit App";
+			sourceTree = "<group>";
+		};
+		7DEA6EDD1AEF83A8001BBD4B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DEA6EDE1AEF83A8001BBD4B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DEA6E981AEF8390001BBD4B /* BSKWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DEA6EBC1AEF8390001BBD4B /* Build configuration list for PBXNativeTarget "BSKWatch" */;
+			buildPhases = (
+				7DEA6E951AEF8390001BBD4B /* Sources */,
+				7DEA6E961AEF8390001BBD4B /* Frameworks */,
+				7DEA6E971AEF8390001BBD4B /* Resources */,
+				7DEA6EED1AEF83A8001BBD4B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DEA6EE51AEF83A8001BBD4B /* PBXTargetDependency */,
+			);
+			name = BSKWatch;
+			productName = BSKWatch;
+			productReference = 7DEA6E991AEF8390001BBD4B /* BSKWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7DEA6EB11AEF8390001BBD4B /* BSKWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DEA6EBF1AEF8390001BBD4B /* Build configuration list for PBXNativeTarget "BSKWatchTests" */;
+			buildPhases = (
+				7DEA6EAE1AEF8390001BBD4B /* Sources */,
+				7DEA6EAF1AEF8390001BBD4B /* Frameworks */,
+				7DEA6EB01AEF8390001BBD4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DEA6EB41AEF8390001BBD4B /* PBXTargetDependency */,
+			);
+			name = BSKWatchTests;
+			productName = BSKWatchTests;
+			productReference = 7DEA6EB21AEF8390001BBD4B /* BSKWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7DEA6EC51AEF83A8001BBD4B /* BSKWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DEA6EEA1AEF83A8001BBD4B /* Build configuration list for PBXNativeTarget "BSKWatch WatchKit Extension" */;
+			buildPhases = (
+				7DEA6EC21AEF83A8001BBD4B /* Sources */,
+				7DEA6EC31AEF83A8001BBD4B /* Frameworks */,
+				7DEA6EC41AEF83A8001BBD4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DEA6EDB1AEF83A8001BBD4B /* PBXTargetDependency */,
+			);
+			name = "BSKWatch WatchKit Extension";
+			productName = "BSKWatch WatchKit Extension";
+			productReference = 7DEA6EC61AEF83A8001BBD4B /* BSKWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		7DEA6ED71AEF83A8001BBD4B /* BSKWatch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DEA6EE71AEF83A8001BBD4B /* Build configuration list for PBXNativeTarget "BSKWatch WatchKit App" */;
+			buildPhases = (
+				7DEA6ED61AEF83A8001BBD4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BSKWatch WatchKit App";
+			productName = "BSKWatch WatchKit App";
+			productReference = 7DEA6ED81AEF83A8001BBD4B /* BSKWatch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DEA6E911AEF8390001BBD4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = DuHao;
+				TargetAttributes = {
+					7DEA6E981AEF8390001BBD4B = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					7DEA6EB11AEF8390001BBD4B = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 7DEA6E981AEF8390001BBD4B;
+					};
+					7DEA6EC51AEF83A8001BBD4B = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					7DEA6ED71AEF83A8001BBD4B = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 7DEA6E941AEF8390001BBD4B /* Build configuration list for PBXProject "BSKWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DEA6E901AEF8390001BBD4B;
+			productRefGroup = 7DEA6E9A1AEF8390001BBD4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DEA6E981AEF8390001BBD4B /* BSKWatch */,
+				7DEA6EB11AEF8390001BBD4B /* BSKWatchTests */,
+				7DEA6EC51AEF83A8001BBD4B /* BSKWatch WatchKit Extension */,
+				7DEA6ED71AEF83A8001BBD4B /* BSKWatch WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DEA6E971AEF8390001BBD4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D9E59B21B05A6C700FFE650 /* ttt.txt in Resources */,
+				7D9E59B01B05A51800FFE650 /* json.txt in Resources */,
+				7DEA6EA81AEF8390001BBD4B /* Main.storyboard in Resources */,
+				7DEA6EAD1AEF8390001BBD4B /* LaunchScreen.xib in Resources */,
+				7DEA6EAA1AEF8390001BBD4B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEA6EB01AEF8390001BBD4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEA6EC41AEF83A8001BBD4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DEA6ED51AEF83A8001BBD4B /* Images.xcassets in Resources */,
+				7DEA6ED91AEF83A8001BBD4B /* BSKWatch WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEA6ED61AEF83A8001BBD4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DEA6EE11AEF83A8001BBD4B /* Interface.storyboard in Resources */,
+				7DEA6EE31AEF83A8001BBD4B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DEA6E951AEF8390001BBD4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D0867F31B033BB7007BF418 /* TabBarViewController.m in Sources */,
+				7DEA6EA51AEF8390001BBD4B /* ViewController.m in Sources */,
+				7D0867F91B033FE8007BF418 /* MyTabBarItem.m in Sources */,
+				7DEA6EA21AEF8390001BBD4B /* AppDelegate.m in Sources */,
+				7D0867F61B033D9F007BF418 /* TwoViewController.m in Sources */,
+				7DEA6E9F1AEF8390001BBD4B /* main.m in Sources */,
+				7D0867FC1B034B63007BF418 /* ImageFromView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEA6EAE1AEF8390001BBD4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DEA6EB91AEF8390001BBD4B /* BSKWatchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEA6EC21AEF83A8001BBD4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DEA6ED01AEF83A8001BBD4B /* NotificationController.m in Sources */,
+				7D8535F41B09DB5B004AECB8 /* ChangeMonthInterfaceController.m in Sources */,
+				7D8535EE1B097F58004AECB8 /* ChangeYearInterfaceController.m in Sources */,
+				7DAB66371B0444B400BA2761 /* ChoiceTimeSlotVC.m in Sources */,
+				7D1E90541B09E41A00546AEB /* ChangeDayInterfaceController.m in Sources */,
+				7D6FB0E11B049BFB0040A1AF /* RecordMode.m in Sources */,
+				7DAB663D1B0444DA00BA2761 /* RecordInterfaceController.m in Sources */,
+				7D9216F61AF9E27700A5A3A5 /* CustomNotificationController.m in Sources */,
+				7D6FB0DE1B049B0C0040A1AF /* NSDate+DH.m in Sources */,
+				7DA24DA61B05CDD700BA093D /* YearCell.m in Sources */,
+				7DAB66301B04439500BA2761 /* recordTimeCell.m in Sources */,
+				7D8535F11B097FC5004AECB8 /* TestDateCell.m in Sources */,
+				7D772E041B00A224003C15CD /* BSKTool.m in Sources */,
+				7D1E90511B09E1D800546AEB /* MonthCell.m in Sources */,
+<<<<<<< HEAD
+				7DFB45F41B15653900A5645B /* DayCell.m in Sources */,
+=======
+				183AB6191B0B927F002BC615 /* DayCell.m in Sources */,
+>>>>>>> origin/master
+				7DEA6ED31AEF83A8001BBD4B /* GlanceController.m in Sources */,
+				7DAB66401B04902700BA2761 /* TestTimeSlotCell.m in Sources */,
+				7DAB663C1B0444DA00BA2761 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DEA6EB41AEF8390001BBD4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DEA6E981AEF8390001BBD4B /* BSKWatch */;
+			targetProxy = 7DEA6EB31AEF8390001BBD4B /* PBXContainerItemProxy */;
+		};
+		7DEA6EDB1AEF83A8001BBD4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DEA6ED71AEF83A8001BBD4B /* BSKWatch WatchKit App */;
+			targetProxy = 7DEA6EDA1AEF83A8001BBD4B /* PBXContainerItemProxy */;
+		};
+		7DEA6EE51AEF83A8001BBD4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DEA6EC51AEF83A8001BBD4B /* BSKWatch WatchKit Extension */;
+			targetProxy = 7DEA6EE41AEF83A8001BBD4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7DEA6EA61AEF8390001BBD4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DEA6EA71AEF8390001BBD4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7DEA6EAB1AEF8390001BBD4B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DEA6EAC1AEF8390001BBD4B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		7DEA6EDF1AEF83A8001BBD4B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DEA6EE01AEF83A8001BBD4B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DEA6EBA1AEF8390001BBD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7DEA6EBB1AEF8390001BBD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DEA6EBD1AEF8390001BBD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BSKWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7DEA6EBE1AEF8390001BBD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BSKWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7DEA6EC01AEF8390001BBD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BSKWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BSKWatch.app/BSKWatch";
+			};
+			name = Debug;
+		};
+		7DEA6EC11AEF8390001BBD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BSKWatchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BSKWatch.app/BSKWatch";
+			};
+			name = Release;
+		};
+		7DEA6EE81AEF83A8001BBD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = BSKWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "BSKWatch WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		7DEA6EE91AEF83A8001BBD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = BSKWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "BSKWatch WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		7DEA6EEB1AEF83A8001BBD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BSKWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7DEA6EEC1AEF83A8001BBD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "BSKWatch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DEA6E941AEF8390001BBD4B /* Build configuration list for PBXProject "BSKWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DEA6EBA1AEF8390001BBD4B /* Debug */,
+				7DEA6EBB1AEF8390001BBD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DEA6EBC1AEF8390001BBD4B /* Build configuration list for PBXNativeTarget "BSKWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DEA6EBD1AEF8390001BBD4B /* Debug */,
+				7DEA6EBE1AEF8390001BBD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DEA6EBF1AEF8390001BBD4B /* Build configuration list for PBXNativeTarget "BSKWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DEA6EC01AEF8390001BBD4B /* Debug */,
+				7DEA6EC11AEF8390001BBD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DEA6EE71AEF83A8001BBD4B /* Build configuration list for PBXNativeTarget "BSKWatch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DEA6EE81AEF83A8001BBD4B /* Debug */,
+				7DEA6EE91AEF83A8001BBD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DEA6EEA1AEF83A8001BBD4B /* Build configuration list for PBXNativeTarget "BSKWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DEA6EEB1AEF83A8001BBD4B /* Debug */,
+				7DEA6EEC1AEF83A8001BBD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DEA6E911AEF8390001BBD4B /* Project object */;
+}
